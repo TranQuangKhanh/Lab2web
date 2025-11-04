@@ -4,6 +4,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tsconfigPaths()],
+  base: "./", // Quan trọng để deploy không lỗi đường dẫn
   resolve: {
     alias: {
       "@": "/src",
@@ -20,7 +21,7 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    sourcemap: true,
+    sourcemap: false,
     target: "esnext",
   },
 });
