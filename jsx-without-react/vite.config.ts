@@ -5,13 +5,18 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "createElement",
     jsxFragment: "Fragment",
-    jsx: "transform", // dùng Classic Transform (đồng bộ với tsconfig)
+    jsx: "transform",
   },
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
-  base: "./",
+  base: "/",
   server: {
     port: 5173,
     open: true,
