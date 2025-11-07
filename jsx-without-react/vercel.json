@@ -1,4 +1,7 @@
 {
-  "buildCommand": false,
-  "installCommand": false
+  "version": 2,
+  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
