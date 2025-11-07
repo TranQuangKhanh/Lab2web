@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd ../jsx-without-react && npm install && npm run build",
-  "outputDirectory": "jsx-without-react/dist",
+  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
