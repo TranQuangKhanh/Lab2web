@@ -1,13 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
-    }
-  ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
+  "buildCommand": "cd ../jsx-without-react && npm install && npm run build",
+  "outputDirectory": "jsx-without-react/dist",
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
