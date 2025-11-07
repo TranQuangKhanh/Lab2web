@@ -5,9 +5,9 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "createElement",
     jsxFragment: "Fragment",
-    jsx: "transform"
+    jsx: "transform",
   },
   build: {
-    outDir: "dist"
-  }
+    outDir: "dist",
+  },
 });

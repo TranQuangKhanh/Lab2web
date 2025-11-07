@@ -9,7 +9,5 @@
   ],
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }

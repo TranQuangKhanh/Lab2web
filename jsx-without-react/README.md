@@ -19,17 +19,20 @@ npx serve dist -p 8080
 Deploy options (recommended):
 
 - Netlify (recommended):
+
   - Root directory: `jsx-without-react`
   - Build command: `npm ci && npm run build`
   - Publish directory: `dist`
   - Netlify will use `netlify.toml` routing for SPA
 
 - Cloudflare Pages:
+
   - Root directory: `jsx-without-react`
   - Build command: `npm ci && npm run build`
   - Build output directory: `dist`
 
 - GitHub Pages (public repo):
+
   - Add the `gh-pages` package and deploy, or upload `dist/` to `gh-pages` branch (not included automatically)
 
 - Surge (quick test):
