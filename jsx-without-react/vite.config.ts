@@ -5,17 +5,9 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "createElement",
     jsxFragment: "Fragment",
-    jsx: "transform",
+    jsx: "transform"
   },
   build: {
-    outDir: "dist",
-    emptyOutDir: true,
-    minify: 'esbuild',
-    target: 'esnext'
-  },
-  base: "./",
-  server: {
-    port: 5173,
-    open: true,
-  },
+    outDir: "dist"
+  }
 });
