@@ -8,16 +8,15 @@
     "npm": "9.x"
   },
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
+    "dev": "./node_modules/.bin/vite",
+    "build": "ls -la node_modules/.bin && ./node_modules/.bin/vite build",
     "start": "node ./server.js",
-    "preview": "npx vite preview"
+    "preview": "./node_modules/.bin/vite preview",
+    "vercel-build": "npm install && ls -la node_modules/.bin && ./node_modules/.bin/vite build"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "serve-static": "^1.15.0"
-  },
-  "devDependencies": {
+    "serve-static": "^1.15.0",
     "vite": "^5.4.0",
     "typescript": "^5.0.2"
   }
