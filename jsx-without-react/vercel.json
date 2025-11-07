@@ -1,8 +1,4 @@
 {
-  "version": 2,
-  "framework": null,
-  "buildCommand": "npm run vercel-build",
-  "installCommand": "npm install",
-  "outputDirectory": "dist",
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "buildCommand": false,
+  "installCommand": false
 }
