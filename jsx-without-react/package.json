@@ -9,8 +9,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview",
-    "preview": "vite preview"
+    "start": "vite preview --host",
+    "preview": "vite preview",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "vite": "^4.5.0",
