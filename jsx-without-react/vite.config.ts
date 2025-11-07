@@ -10,13 +10,10 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
+    minify: 'esbuild',
+    target: 'esnext'
   },
-  base: "/",
+  base: "./",
   server: {
     port: 5173,
     open: true,
